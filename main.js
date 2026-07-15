@@ -1,4 +1,16 @@
 (function () {
+  document.querySelectorAll('a.logo').forEach(function (logo) {
+    logo.addEventListener('click', function (e) {
+      var href = (logo.getAttribute('href') || '').replace(/^\.\//, '');
+      var path = window.location.pathname.replace(/\\/g, '/');
+      var onHome = path === '/' || /\/index\.html$/i.test(path) || /\/$/.test(path) && path.split('/').filter(Boolean).length <= 1;
+      if (onHome && (href === 'index.html' || href === '/' || href === '')) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  });
+
   var config = window.HUIZENMARKT_CONFIG || {};
   var mode = config.mode || 'waitlist';
   var checkout = config.checkout || 'api';

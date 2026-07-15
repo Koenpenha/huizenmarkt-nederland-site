@@ -1,27 +1,49 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
-  <title>Bedankt â€” Huizenmarkt Nederland</title>
+  <title>Bedankt — Huizenmarkt Nederland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header class="site-header"><div class="container header-inner"><a class="logo" href="/"><span class="logo-mark">H</span>uizenmarkt<span>Nederland</span></a></div></header>
-  <main class="thanks"><div class="container thanks-box">
-    <h1>Bedankt voor je betaling</h1>
-    <p id="thanks-lead">Je PDF komt binnen enkele minuten per e-mail. Controleer ook je spamfolder.</p>
-    <div id="thanks-status" class="thanks-status is-loading" hidden><p id="thanks-status-text">Betaling controleren...</p></div>
-    <div id="thanks-download" class="thanks-download" hidden><a id="download-btn" class="btn btn-primary" href="#">Download je PDF</a></div>
-    <p id="thanks-support">Geen mail ontvangen? Stuur je betaalbevestiging naar <a href="mailto:info@huizenmarkt-nederland.nl">info@huizenmarkt-nederland.nl</a>.</p>
-    <a class="thanks-back" href="/">â†’ Terug naar home</a>
-  </div></main>
-  <footer class="site-footer"><div class="container footer-inner">
-    <p class="footer-brand">Huizenmarkt Nederland</p>
-    <p class="footer-contact"><a href="mailto:info@huizenmarkt-nederland.nl">info@huizenmarkt-nederland.nl</a></p>
-    <p class="footer-small">Â© 2026 Huizenmarkt Nederland</p>
-  </div></footer>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Huizenmarkt Nederland — naar home">
+        <svg class="logo-emblem" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true" focusable="false">
+          <rect x="0.5" y="0.5" width="39" height="39" fill="none" stroke="currentColor" stroke-width="0.75" opacity="0.4"/>
+          <path d="M6 28 L20 10 L34 28" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 28 V20 H28 V28" fill="none" stroke="currentColor" stroke-width="0.95"/>
+          <line x1="6" y1="28" x2="34" y2="28" stroke="currentColor" stroke-width="0.65" opacity="0.5"/>
+        </svg>
+        <span class="logo-wordmark">
+          <span class="logo-name">Huizenmarkt</span>
+          <span class="logo-tagline">Nederland</span>
+        </span>
+      </a>
+    </div>
+  </header>
+  <main class="thanks">
+    <div class="container thanks-box">
+      <h1>Bedankt voor je betaling</h1>
+      <p id="thanks-lead">Je PDF komt binnen enkele minuten per e-mail. Controleer ook je spamfolder.</p>
+      <div id="thanks-status" class="thanks-status is-loading" hidden><p id="thanks-status-text">Betaling controleren...</p></div>
+      <div id="thanks-download" class="thanks-download" hidden><a id="download-btn" class="btn btn-primary" href="#">Download je PDF</a></div>
+      <p id="thanks-support">Geen mail ontvangen? Stuur je betaalbevestiging naar <a href="mailto:info@huizenmarkt-nederland.nl">info@huizenmarkt-nederland.nl</a>.</p>
+      <a class="thanks-back" href="index.html">← Terug naar home</a>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Huizenmarkt Nederland</p>
+      <p class="footer-contact"><a href="mailto:info@huizenmarkt-nederland.nl">info@huizenmarkt-nederland.nl</a></p>
+      <p class="footer-small">© 2026 Huizenmarkt Nederland</p>
+    </div>
+  </footer>
   <script src="config.js"></script>
   <script src="bedankt.js"></script>
 </body>
