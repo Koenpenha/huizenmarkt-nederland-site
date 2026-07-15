@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["downloads/**"]
+
+[functions."mollie-webhook"]
+  timeout = 26
+
+[functions."mock-webhook"]
+  timeout = 26
